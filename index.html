@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luqman Tariq - Professional WordPress Web Developer specializing in custom websites, WooCommerce stores, and responsive design.">
+    <meta name="keywords" content="WordPress Developer, Web Developer, WooCommerce, Elementor, Frontend Developer">
+    <meta name="author" content="Luqman Tariq">
+    <title>Luqman Tariq | WordPress Web Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='50' font-weight='bold' fill='white' text-anchor='middle'%3ELT%3C/text%3E%3C/svg%3E">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span class="loader-text">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-follower" id="customCursorFollower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">Luqman<span class="text-primary">.</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-buttons d-flex align-items-center gap-3 ms-lg-4">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                    <a href="#contact" class="btn btn-primary btn-hire">
+                        <i class="bi bi-rocket-takeoff-fill me-2"></i>Hire Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-animation">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge animate-fade-in">
+                            <span class="badge-glow"></span>
+                            <i class="bi bi-patch-check-fill text-primary me-2"></i>
+                            Available for Freelance Projects
+                        </div>
+                        <h1 class="hero-title animate-fade-in-up">
+                            Hi, I'm <span class="text-gradient">Luqman Tariq</span>
+                        </h1>
+                        <div class="hero-subtitle-wrapper animate-fade-in-up">
+                            <span class="hero-subtitle-prefix">I'm a </span>
+                            <span class="hero-typing" id="heroTyping"></span>
+                        </div>
+                        <p class="hero-description animate-fade-in-up">
+                            I craft stunning, high-performance WordPress websites that help businesses grow online. Specializing in custom themes, WooCommerce solutions, and responsive design that converts visitors into customers.
+                        </p>
+                        <div class="hero-buttons animate-fade-in-up">
+                            <a href="assets/resume.pdf" class="btn btn-primary btn-lg me-3" download>
+                                <i class="bi bi-download me-2"></i>Download CV
+                            </a>
+                            <a href="projects.html" class="btn btn-outline-primary btn-lg me-3">
+                                <i class="bi bi-folder2-open me-2"></i>View Projects
+                            </a>
+                            <a href="#contact" class="btn btn-glass btn-lg">
+                                <i class="bi bi-chat-dots-fill me-2"></i>Hire Me
+                            </a>
+                        </div>
+                        <div class="hero-social animate-fade-in-up">
+                            <span class="social-label">Connect with me:</span>
+                            <div class="social-icons">
+                                <a href="https://github.com/luqmantariq" target="_blank" class="social-icon" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/luqmantariq" target="_blank" class="social-icon" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="mailto:luqman@example.com" class="social-icon" aria-label="Email">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrapper animate-fade-in">
+                        <div class="hero-image-container">
+                            <div class="hero-image-bg"></div>
+                            <div class="hero-illustration">
+                                <div class="code-window">
+                                    <div class="code-header">
+                                        <div class="code-dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <span class="code-title">style.css</span>
+                                    </div>
+                                    <div class="code-body">
+                                        <pre><code><span class="code-keyword">.developer</span> {
+  <span class="code-property">name</span>: <span class="code-string">"Luqman Tariq"</span>;
+  <span class="code-property">role</span>: <span class="code-string">"WordPress Dev"</span>;
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"HTML5"</span>,
+    <span class="code-string">"CSS3"</span>,
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"WordPress"</span>
+  ];
+  <span class="code-property">passion</span>: <span class="code-keyword">true</span>;
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-icons">
+                                <div class="float-icon float-icon-1"><i class="bi bi-wordpress"></i></div>
+                                <div class="float-icon float-icon-2"><i class="bi bi-code-slash"></i></div>
+                                <div class="float-icon float-icon-3"><i class="bi bi-palette"></i></div>
+                                <div class="float-icon float-icon-4"><i class="bi bi-phone"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <span class="scroll-text">Scroll Down</span>
+                <i class="bi bi-chevron-double-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Get To Know Me</span>
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">Passionate developer dedicated to creating exceptional web experiences</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-container">
+                            <div class="about-image-bg"></div>
+                            <div class="about-image-placeholder">
+                                <i class="bi bi-person-circle"></i>
+                                <span>Luqman Tariq</span>
+                            </div>
+                            <div class="experience-badge">
+                                <span class="exp-number">2+</span>
+                                <span class="exp-text">Years<br>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="about-heading">Crafting Digital Excellence with WordPress</h3>
+                        <p class="about-text">
+                            I'm a passionate WordPress Web Developer with over 2 years of experience in creating stunning, functional websites that help businesses succeed online. My journey in web development started with a curiosity for how websites work, and has evolved into a deep expertise in WordPress ecosystem.
+                        </p>
+                        <p class="about-text">
+                            I specialize in building custom WordPress themes, e-commerce solutions with WooCommerce, and responsive websites that provide exceptional user experiences. I believe in clean code, modern design principles, and delivering results that exceed client expectations.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                <span>Custom WordPress Development</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                <span>WooCommerce Expertise</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                <span>Responsive Design Specialist</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                <span>SEO-Optimized Websites</span>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">
+                            <i class="bi bi-arrow-right me-2"></i>Learn More About Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="row g-4">
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-folder-check"></i>
+                            </div>
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Learning Hours</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-emoji-smile"></i>
+                            </div>
+                            <div class="stat-number" data-target="20">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">My Expertise</span>
+                <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+                <p class="section-subtitle">Tools and technologies I use to bring your ideas to life</p>
+            </div>
+            <div class="row g-4">
+                <!-- Frontend Skills -->
+                <div class="col-lg-6">
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <h3 class="skill-category-title">Frontend Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon html-icon"><i class="bi bi-filetype-html"></i></div>
+                                    <span class="skill-name">HTML5</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="95"></div>
+                                    </div>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon css-icon"><i class="bi bi-filetype-css"></i></div>
+                                    <span class="skill-name">CSS3</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="90"></div>
+                                    </div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon js-icon"><i class="bi bi-filetype-js"></i></div>
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="75"></div>
+                                    </div>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon bootstrap-icon"><i class="bi bi-bootstrap"></i></div>
+                                    <span class="skill-name">Bootstrap</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="90"></div>
+                                    </div>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- WordPress Skills -->
+                <div class="col-lg-6">
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="bi bi-wordpress"></i>
+                            </div>
+                            <h3 class="skill-category-title">WordPress Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon wp-icon"><i class="bi bi-wordpress"></i></div>
+                                    <span class="skill-name">WordPress</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="92"></div>
+                                    </div>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon elementor-icon"><i class="bi bi-palette2"></i></div>
+                                    <span class="skill-name">Elementor</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="88"></div>
+                                    </div>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon woo-icon"><i class="bi bi-cart3"></i></div>
+                                    <span class="skill-name">WooCommerce</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="85"></div>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon php-icon"><i class="bi bi-code-slash"></i></div>
+                                    <span class="skill-name">Basic PHP</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="60"></div>
+                                    </div>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="col-lg-6">
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                            <h3 class="skill-category-title">Development Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon git-icon"><i class="bi bi-git"></i></div>
+                                    <span class="skill-name">Git & GitHub</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="80"></div>
+                                    </div>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon vscode-icon"><i class="bi bi-file-code"></i></div>
+                                    <span class="skill-name">VS Code</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="95"></div>
+                                    </div>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon chrome-icon"><i class="bi bi-browser-chrome"></i></div>
+                                    <span class="skill-name">Chrome DevTools</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="85"></div>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon local-icon"><i class="bi bi-server"></i></div>
+                                    <span class="skill-name">LocalWP & XAMPP</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="88"></div>
+                                    </div>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AI Tools -->
+                <div class="col-lg-6">
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="bi bi-robot"></i>
+                            </div>
+                            <h3 class="skill-category-title">AI & Modern Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon chatgpt-icon"><i class="bi bi-chat-square-text"></i></div>
+                                    <span class="skill-name">ChatGPT</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="85"></div>
+                                    </div>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon gemini-icon"><i class="bi bi-stars"></i></div>
+                                    <span class="skill-name">Google Gemini</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="80"></div>
+                                    </div>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon prompt-icon"><i class="bi bi-terminal"></i></div>
+                                    <span class="skill-name">Prompt Engineering</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="75"></div>
+                                    </div>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <div class="skill-icon db-icon"><i class="bi bi-database"></i></div>
+                                    <span class="skill-name">Basic MySQL</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar" data-progress="55"></div>
+                                    </div>
+                                    <span class="skill-percent">55%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="section services-preview" id="services-preview">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">What I Offer</span>
+                <h2 class="section-title">My <span class="text-gradient">Services</span></h2>
+                <p class="section-subtitle">Professional web development services tailored to your needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-wordpress"></i>
+                        </div>
+                        <h4 class="service-title">WordPress Development</h4>
+                        <p class="service-description">Custom WordPress websites with unique themes, plugins, and functionality tailored to your brand.</p>
+                        <a href="services.html" class="service-link">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                        <h4 class="service-title">WooCommerce Store</h4>
+                        <p class="service-description">Complete e-commerce solutions with WooCommerce, from product setup to payment integration.</p>
+                        <a href="services.html" class="service-link">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h4 class="service-title">Responsive Design</h4>
+                        <p class="service-description">Mobile-first, fully responsive websites that look perfect on all devices and screen sizes.</p>
+                        <a href="services.html" class="service-link">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h4 class="service-title">Speed Optimization</h4>
+                        <p class="service-description">Optimize your website performance for faster loading times and better user experience.</p>
+                        <a href="services.html" class="service-link">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-bug"></i>
+                        </div>
+                        <h4 class="service-title">Bug Fixes</h4>
+                        <p class="service-description">Debug and fix WordPress issues, plugin conflicts, and performance problems quickly.</p>
+                        <a href="services.html" class="service-link">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <h4 class="service-title">SEO Optimization</h4>
+                        <p class="service-description">Improve your search engine rankings with proper SEO techniques and optimization.</p>
+                        <a href="services.html" class="service-link">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary btn-lg">
+                    <i class="bi bi-grid me-2"></i>View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Client Feedback</span>
+                <h2 class="section-title">What Clients <span class="text-gradient">Say</span></h2>
+                <p class="section-subtitle">Trusted by businesses worldwide for quality web development</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Luqman delivered an amazing website for our business. His attention to detail and professionalism exceeded our expectations. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5 class="author-name">Sarah Johnson</h5>
+                                <span class="author-role">Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Working with Luqman was a great experience. He understood our requirements perfectly and delivered a beautiful WooCommerce store on time."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5 class="author-name">Michael Chen</h5>
+                                <span class="author-role">E-commerce Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"The website redesign was exactly what we needed. Luqman's expertise in WordPress transformed our online presence completely."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5 class="author-name">Emma Williams</h5>
+                                <span class="author-role">Small Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Fast, reliable, and incredibly skilled. Luqman fixed all our website issues and optimized it for speed. A true professional!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5 class="author-name">David Miller</h5>
+                                <span class="author-role">Digital Agency Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-controls">
+                    <button class="testimonial-btn prev" id="testimonialPrev" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <div class="testimonials-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn next" id="testimonialNext" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how I can help bring your ideas to life</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="contact-info-container">
+                        <div class="contact-info-header">
+                            <h3>Let's Work Together</h3>
+                            <p>I'm available for freelance projects and collaborations. Feel free to reach out!</p>
+                        </div>
+                        <div class="contact-info-items">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email</h5>
+                                    <a href="mailto:luqman@example.com">luqman@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Phone</h5>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Location</h5>
+                                    <span>Available Worldwide (Remote)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <h5>Follow Me</h5>
+                            <div class="social-links">
+                                <a href="https://github.com/luqmantariq" target="_blank" class="social-link">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/luqmantariq" target="_blank" class="social-link">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/luqmantariq" target="_blank" class="social-link">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contactName" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="contactName" name="name" placeholder="John Doe" required>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contactEmail" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="contactEmail" name="email" placeholder="john@example.com" required>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="contactSubject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="contactSubject" name="subject" placeholder="Project Inquiry" required>
+                                        <div class="invalid-feedback">Please enter a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="contactMessage" class="form-label">Message</label>
+                                        <textarea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                                        <div class="invalid-feedback">Please enter your message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <span class="btn-text">Send Message</span>
+                                        <span class="btn-loading d-none">
+                                            <span class="spinner-border spinner-border-sm me-2"></span>
+                                            Sending...
+                                        </span>
+                                        <i class="bi bi-send-fill ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <a href="index.html" class="footer-logo">
+                                <span class="logo-text">Luqman<span class="text-primary">.</span></span>
+                            </a>
+                            <p class="footer-description">
+                                WordPress Web Developer creating stunning, functional websites that help businesses grow online.
+                            </p>
+                            <div class="footer-social">
+                                <a href="https://github.com/luqmantariq" target="_blank" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/luqmantariq" target="_blank" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/luqmantariq" target="_blank" aria-label="Twitter">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="mailto:luqman@example.com" aria-label="Email">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-links">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-links">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href="services.html">WordPress</a></li>
+                                <li><a href="services.html">WooCommerce</a></li>
+                                <li><a href="services.html">Web Design</a></li>
+                                <li><a href="services.html">SEO</a></li>
+                                <li><a href="services.html">Maintenance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer-newsletter">
+                            <h5>Stay Updated</h5>
+                            <p>Subscribe to get updates on my latest projects and tips.</p>
+                            <form class="newsletter-form" id="newsletterForm">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2024 Luqman Tariq. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional web development services by Luqman Tariq - WordPress development, WooCommerce stores, responsive design, and more.">
+    <meta name="keywords" content="WordPress Services, Web Development, WooCommerce, SEO, Freelance Developer">
+    <meta name="author" content="Luqman Tariq">
+    <title>Services | Luqman Tariq - WordPress Web Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='50' font-weight='bold' fill='white' text-anchor='middle'%3ELT%3C/text%3E%3C/svg%3E">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span class="loader-text">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-follower" id="customCursorFollower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">Luqman<span class="text-primary">.</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-buttons d-flex align-items-center gap-3 ms-lg-4">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                    <a href="index.html#contact" class="btn btn-primary btn-hire">
+                        <i class="bi bi-rocket-takeoff-fill me-2"></i>Hire Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <div class="page-header-content text-center">
+                <span class="page-header-badge">What I Offer</span>
+                <h1 class="page-header-title">Professional <span class="text-gradient">Services</span></h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Services</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="section services-intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="section-badge">My Services</span>
+                    <h2 class="section-title">Quality Web Development <span class="text-gradient">Solutions</span></h2>
+                    <p class="section-subtitle">
+                        I offer comprehensive web development services tailored to help your business succeed online. From custom WordPress websites to complete e-commerce solutions, I deliver results that exceed expectations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="section main-services">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-wordpress"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">WordPress Website Development</h3>
+                            <p class="service-detail-description">
+                                Custom WordPress websites built from scratch or customized to match your specific requirements. I create unique, responsive themes that represent your brand perfectly.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Custom Theme Development</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Elementor Page Builder Integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Plugin Installation & Configuration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Blog Setup & Customization</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Contact Form Integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> User Role Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">WooCommerce E-commerce</h3>
+                            <p class="service-detail-description">
+                                Complete e-commerce solutions with WooCommerce. From simple stores to complex product catalogs with advanced functionality.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Complete Store Setup</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Product & Category Management</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Payment Gateway Integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Shipping Configuration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Order Management System</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Inventory Tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">Website Redesign</h3>
+                            <p class="service-detail-description">
+                                Transform your outdated website into a modern, fresh design that captivates visitors and improves conversion rates.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Modern UI/UX Design</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Content Migration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Brand Identity Integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Improved User Experience</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Mobile Optimization</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Performance Enhancement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">Responsive Web Design</h3>
+                            <p class="service-detail-description">
+                                Mobile-first, responsive websites that look and function perfectly on all devices, from smartphones to desktops.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Mobile-First Approach</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Cross-Browser Compatibility</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Fluid Grid Layouts</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Touch-Friendly Interface</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Optimized Images</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Fast Loading Speed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">Speed Optimization</h3>
+                            <p class="service-detail-description">
+                                Optimize your website for lightning-fast loading times, improving user experience and search engine rankings.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Performance Audit</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Image Optimization</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Caching Implementation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Database Optimization</li>
+                                <li><i class="bi bi-check-circle-fill"></i> CDN Setup</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Code Minification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-bug"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">Bug Fixes & Troubleshooting</h3>
+                            <p class="service-detail-description">
+                                Professional debugging and troubleshooting services to fix any issues affecting your website's functionality.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Error Diagnosis & Resolution</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Plugin Conflict Resolution</li>
+                                <li><i class="bi bi-check-circle-fill"></i> White Screen of Death Fix</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Database Error Repair</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Security Vulnerability Patching</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Broken Link Repair</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">Website Maintenance</h3>
+                            <p class="service-detail-description">
+                                Keep your website secure, updated, and running smoothly with regular maintenance and monitoring services.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> Regular Backups</li>
+                                <li><i class="bi bi-check-circle-fill"></i> WordPress & Plugin Updates</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Security Monitoring</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Uptime Monitoring</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Content Updates</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Monthly Reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="col-lg-6">
+                    <div class="service-detail-card">
+                        <div class="service-detail-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <div class="service-detail-content">
+                            <h3 class="service-detail-title">SEO Optimization</h3>
+                            <p class="service-detail-description">
+                                Improve your website's visibility in search engines with proper SEO implementation and optimization techniques.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill"></i> On-Page SEO Setup</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Meta Tags Optimization</li>
+                                <li><i class="bi bi-check-circle-fill"></i> XML Sitemap Creation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Schema Markup Implementation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Image SEO</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Google Search Console Setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">How I Work</span>
+                <h2 class="section-title">My <span class="text-gradient">Process</span></h2>
+                <p class="section-subtitle">A streamlined workflow designed to deliver excellent results</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h4>Discovery</h4>
+                        <p>We start with a detailed discussion about your project requirements, goals, and vision. I analyze your needs and propose the best solutions.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h4>Planning</h4>
+                        <p>I create a comprehensive project plan including timeline, milestones, and deliverables. We agree on the scope and technical approach.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h4>Design</h4>
+                        <p>Creating the visual design and user interface. I share mockups and prototypes for your feedback before moving to development.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h4>Development</h4>
+                        <p>Writing clean, efficient code to bring the design to life. Regular updates and progress demonstrations throughout the development phase.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <h4>Testing</h4>
+                        <p>Rigorous testing across devices and browsers. Performance optimization, bug fixing, and quality assurance checks.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">06</div>
+                    <div class="process-content">
+                        <h4>Launch</h4>
+                        <p>Deploying your website to the live server, with full support and training provided. Post-launch monitoring and support included.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Investment</span>
+                <h2 class="section-title">Pricing <span class="text-gradient">Plans</span></h2>
+                <p class="section-subtitle">Transparent pricing for quality web development services</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Starter</h4>
+                            <p class="pricing-subtitle">Perfect for simple projects</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">299</span>
+                            <span class="price-period">Starting at</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 5 Pages</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Responsive Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Contact Form</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Basic SEO Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 2 Revisions</li>
+                            <li class="disabled"><i class="bi bi-x-circle-fill"></i> E-commerce</li>
+                            <li class="disabled"><i class="bi bi-x-circle-fill"></i> Blog Section</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-outline-primary btn-lg w-100">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Professional</h4>
+                            <p class="pricing-subtitle">Best for growing businesses</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">599</span>
+                            <span class="price-period">Starting at</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 10 Pages</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Responsive Design</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Contact Form</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Full SEO Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> 4 Revisions</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Blog Section</li>
+                            <li class="disabled"><i class="bi bi-x-circle-fill"></i> E-commerce</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-primary btn-lg w-100">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">E-commerce</h4>
+                            <p class="pricing-subtitle">Full online store solution</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">999</span>
+                            <span class="price-period">Starting at</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Unlimited Pages</li>
+                            <li><i class="bi bi-check-circle-fill"></i> WooCommerce Store</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Payment Integration</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Full SEO Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Unlimited Revisions</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Product Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Shipping Config</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn btn-outline-primary btn-lg w-100">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-note text-center mt-5">
+                <p><i class="bi bi-info-circle me-2"></i>All prices are starting points. Final cost depends on project complexity and requirements. Contact me for a custom quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Questions</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p class="section-subtitle">Common questions about my services and process</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion faq-accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How long does it take to build a website?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The timeline depends on the project complexity. A simple website can be completed in 1-2 weeks, while more complex projects with e-commerce functionality may take 4-6 weeks. I'll provide a detailed timeline during our initial discussion.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you provide website hosting?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    I don't provide hosting directly, but I can recommend reliable hosting providers and help you set up your hosting account. I work with various hosting platforms and can assist with the deployment process.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What do you need from me to get started?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    I'll need your content (text, images, logo), branding guidelines if available, examples of websites you like, and a clear description of your project requirements. I'll guide you through the whole process with a detailed checklist.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Will I be able to update the website myself?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! WordPress websites I build are easy to manage. I provide a user-friendly admin panel and offer training sessions to help you update content, add blog posts, and manage your store (for e-commerce sites).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Do you offer maintenance packages?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, I offer monthly maintenance packages that include WordPress and plugin updates, security monitoring, regular backups, and technical support. This ensures your website stays secure and runs smoothly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    What payment methods do you accept?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    I accept PayPal, bank transfers, and major credit cards. Projects typically require a 50% deposit to begin, with the remaining 50% due upon project completion.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content text-center">
+                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                    <p class="cta-text">Let's discuss your requirements and create something amazing together!</p>
+                    <div class="cta-buttons">
+                        <a href="index.html#contact" class="btn btn-light btn-lg me-3">
+                            <i class="bi bi-chat-dots-fill me-2"></i>Contact Me
+                        </a>
+                        <a href="projects.html" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-folder2-open me-2"></i>View Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <a href="index.html" class="footer-logo">
+                                <span class="logo-text">Luqman<span class="text-primary">.</span></span>
+                            </a>
+                            <p class="footer-description">
+                                WordPress Web Developer creating stunning, functional websites that help businesses grow online.
+                            </p>
+                            <div class="footer-social">
+                                <a href="https://github.com/luqmantariq" target="_blank" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/luqmantariq" target="_blank" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/luqmantariq" target="_blank" aria-label="Twitter">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="mailto:luqman@example.com" aria-label="Email">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-links">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="footer-links">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href="services.html">WordPress</a></li>
+                                <li><a href="services.html">WooCommerce</a></li>
+                                <li><a href="services.html">Web Design</a></li>
+                                <li><a href="services.html">SEO</a></li>
+                                <li><a href="services.html">Maintenance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer-newsletter">
+                            <h5>Stay Updated</h5>
+                            <p>Subscribe to get updates on my latest projects and tips.</p>
+                            <form class="newsletter-form" id="newsletterForm">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2024 Luqman Tariq. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
